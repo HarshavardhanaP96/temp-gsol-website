@@ -20,23 +20,25 @@ import {
   SiMysql,
   SiPython,
   SiAngular,
+  SiAndroid,
+  SiFlutter,
 } from "react-icons/si";
 import React from "react";
 import { motion } from "framer-motion";
 
 const page = () => {
   return (
-    <motion.div className="container mx-auto  bg-gray-300">
+    <motion.div className="container mx-auto  bg-gray-300 dark:bg-black">
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.8 }}
         className="px-10 py-20 text-center"
       >
-        <h2 className="text-7xl font-semibold text-gray-700 mb-10">
+        <h2 className="text-7xl font-semibold text-gray-700 dark:text-gray-200 mb-10">
           Why Choose Grudhra Solutions?
         </h2>
-        <p className="text-xl text-gray-600 mb-8 para px-20">
+        <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 para px-20">
           At Grudhra Solutions, our mission is to empower your business through
           innovative and reliable digital solutions. Here&apos;s why clients
           trust us:
@@ -112,16 +114,16 @@ const page = () => {
           transition={{ duration: 1 }}
           className="text-center lg:text-left lg:w-2/5"
         >
-          <h2 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-800 mb-4 heading-2">
+          <h2 className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-800 mb-4 heading-2">
             Crafting Cutting-Edge Digital Experiences
           </h2>
-          <p className="text-xl text-gray-600 mb-4 para">
+          <p className="text-xl text-gray-600 dark:text-gray-400 mb-4 para">
             At Grudhra Solutions, we specialize in creating innovative web and
             app solutions tailored to your business needs. Our team of experts
             leverages the latest technologies to build scalable, efficient, and
             user-friendly applications that drive engagement and growth.
           </p>
-          <p className="text-xl text-gray-600 mb-4 para">
+          <p className="text-xl text-gray-600 dark:text-gray-400 mb-4 para">
             From concept to deployment, Grudhra Solutions is your partner in
             digital innovation. We offer comprehensive services including
             responsive web design, custom app development, and robust backend
@@ -130,11 +132,11 @@ const page = () => {
         </motion.div>
       </motion.div>
 
-      <div className="px-10 mt-20 bg-gray-300">
-        <h2 className="text-5xl font-semibold text-gray-700 text-center mb-14 heading-2">
+      <div className="px-10 mt-20 bg-gray-300 dark:bg-black">
+        <h2 className="text-5xl font-semibold text-gray-700 dark:text-gray-300 text-center mb-14 heading-2">
           Technology we work with
         </h2>
-        <div className="flex flex-wrap justify-center items-center gap-8 mb-20">
+        <div className="flex flex-wrap justify-center items-center gap-8 pb-20">
           <motion.div
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
@@ -249,7 +251,7 @@ const page = () => {
             transition={{ duration: 1 }}
             className="text-center p-3 bg-white shadow-md rounded-lg w-40 h-w-40 flex flex-col justify-center items-center"
           >
-            <SiPython className="text-6xl text-gray-700" />
+            <SiPython className="text-6xl text-yellow-500" />
             <p className="mt-2 text-xl text-gray-700">Python</p>
           </motion.div>
           <motion.div
@@ -261,13 +263,31 @@ const page = () => {
             <SiAngular className="text-6xl text-red-700" />
             <p className="mt-2 text-xl text-gray-700">Angular</p>
           </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 100 }}
+            transition={{ duration: 1.2 }}
+            className="text-center p-3 bg-white shadow-md rounded-lg w-40 h-w-40 flex flex-col justify-center items-center"
+          >
+            <SiAndroid className="text-6xl text-green-700" />
+            <p className="mt-2 text-xl text-gray-700">Android</p>
+          </motion.div>
+          <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 100 }}
+            transition={{ duration: 1.2 }}
+            className="text-center p-3 bg-white shadow-md rounded-lg w-40 h-w-40 flex flex-col justify-center items-center"
+          >
+            <SiFlutter className="text-6xl text-blue-700" />
+            <p className="mt-2 text-xl text-gray-700">Flutter</p>
+          </motion.div>
         </div>
       </div>
 
       {/* <div className="px-10 mt-20 bg-gray-300">
-        
+       
         <div className="flex justify-center items-center gap-10">
-          
+         
           <iframe width="560" height="315" src="https://www.youtube.com/embed/lMGabOEaQjY?si=drkkaNbI2TUDGl1w" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/gTWEBzdCPKw?si=KGJfi0KzOJDlqqC5" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>

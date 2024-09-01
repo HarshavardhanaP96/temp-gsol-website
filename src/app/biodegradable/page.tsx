@@ -44,25 +44,27 @@ const products: Product[] = [
 
 const Page: React.FC = () => {
   return (
-    <div className=" bg-gray-300 ">
-      <div className="text-center mb-10 pt-10">
-        <h1 className="text-5xl font-bold mb-4">Our Biodegradable Products</h1>
-        <p className="text-lg para">
+    <div className=" bg-gray-300 dark:bg-black  ">
+      <div className="text-center mb-10 pt-10 ">
+        <h1 className="text-5xl font-bold mb-4 dark:text-gray-300 ">
+          Our Biodegradable Products
+        </h1>
+        <p className="text-lg para dark:text-gray-400">
           Explore our range of eco-friendly products made from areca leaves.
           They are sustainable, biodegradable, and perfect for everyday use.
         </p>
       </div>
 
-      <div className="bg-gray-300 p-8 rounded-lg px-20">
-        <h2 className="text-4xl font-bold mb-4 text-center">
+      <div className=" p-8 rounded-lg px-20">
+        <h2 className="text-4xl font-bold mb-4 text-center dark:text-gray-300">
           Why Choose Biodegradable Products?
         </h2>
-        <p className="para text-lg mb-4">
+        <p className="para text-lg mb-4 dark:text-gray-300">
           Using biodegradable products is a crucial step towards reducing
           plastic waste and preserving our environment. Here are some reasons
           why you should consider making the switch:
         </p>
-        <ul className="list-disc list-inside space-y-2 para">
+        <ul className="list-disc list-inside space-y-2 para dark:text-gray-300">
           <li>
             Biodegradable products decompose naturally, reducing landfill waste
             and pollution.
@@ -84,7 +86,7 @@ const Page: React.FC = () => {
             recycling and composting.
           </li>
         </ul>
-        <p className="para text-lg mt-4">
+        <p className="para text-lg mt-4 dark:text-gray-300">
           By choosing biodegradable products, you are contributing to a
           healthier planet and supporting sustainable practices. Let&apos;s work
           together to reduce plastic waste and protect our environment for
@@ -93,7 +95,7 @@ const Page: React.FC = () => {
       </div>
 
       <div className="mb-12 px-20">
-        <h2 className="text-3xl font-bold mb-4 text-center">
+        <h2 className="text-3xl font-bold mb-4 text-center dark:text-gray-200 ">
           What is the Areca Plant?
         </h2>
         <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8 pt-5">
@@ -104,7 +106,7 @@ const Page: React.FC = () => {
               className="w-5/6 h-auto rounded-lg shadow-md"
             />
           </div>
-          <div className="md:w-1/2 pt-5">
+          <div className="md:w-1/2 pt-5 dark:text-gray-300">
             <p className="text-lg mb-4 para">
               The areca plant, also known as Areca catechu, is a species of palm
               that is widely cultivated for its seeds, known as betel nuts. The

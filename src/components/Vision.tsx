@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
 import React from "react";
 import "swiper/css";
 
@@ -15,24 +14,17 @@ const Vision = () => {
         transition={{ duration: 0.8 }}
         className="mt-10 px-10 flex flex-col lg:flex-row justify-center items-center gap-10"
       >
-        <div
-          className={`relative bg-black opacity-90 lg:h-3/5 w-4/5 lg:w-2/5 hover:shadow-md hover:scale-105 ease-in-out rounded-md`}
-        >
-          <Image
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-            width={150}
-            height={100}
-            layout="responsive" // or use layout="responsive" with width and height
-            objectFit="cover" // Adjust based on your needs
-          />
-        </div>
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          className="bg-black opacity-90 lg:h-3/5 w-4/5 lg:w-2/5 hover:shadow-md hover:scale-105 ease-in-out rounded-md "
+        />
         <div className="text-center lg:text-left lg:w-2/5">
           <motion.h2
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-800 mb-4 heading-2"
+            className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-800 dark:text-gray-300 mb-4 heading-2"
           >
             Grudhra Solutions Vision
           </motion.h2>
@@ -40,7 +32,7 @@ const Vision = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.8 }}
-            className="text-xl text-gray-600 mb-4 para"
+            className="text-xl text-gray-600 dark:text-gray-400 mb-4 para"
           >
             At Grudhra Solutions, we are committed to delivering innovative and
             sustainable solutions across various sectors. Our offerings include
@@ -51,7 +43,7 @@ const Vision = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.8 }}
-            className="text-xl text-gray-600 mb-4 para"
+            className="text-xl text-gray-600 dark:text-gray-400 mb-4 para"
           >
             Our team is dedicated to providing top-notch services tailored to
             meet the unique needs of each client. We believe in the power of
@@ -71,7 +63,7 @@ const Vision = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-800 mb-4 heading-2"
+            className="text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-800 dark:text-white mb-4 heading-2"
           >
             Our Commitment
           </motion.h2>
@@ -79,7 +71,7 @@ const Vision = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.8 }}
-            className="text-xl text-gray-600 para"
+            className="text-xl text-gray-600 dark:text-gray-400 para"
           >
             We envision a future where technology and sustainability go hand in
             hand, creating a positive impact on businesses and the environment.
@@ -91,7 +83,7 @@ const Vision = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.8 }}
-            className="text-xl text-gray-600 para"
+            className="text-xl text-gray-600 dark:text-gray-400 para"
           >
             Our commitment extends beyond just providing services. We aim to be
             a trusted partner for our clients, working closely with them to
@@ -100,18 +92,11 @@ const Vision = () => {
             competitive landscape.
           </motion.p>
         </div>
-        <div
-          className={`relative bg-black opacity-90 lg:h-3/5 w-4/5 lg:w-2/5 hover:shadow-md hover:scale-105 ease-in-out rounded-md`}
-        >
-          <Image
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-            width={150}
-            height={100}
-            layout="responsive" // or use layout="responsive" with width and height
-            objectFit="cover" // Adjust based on your needs
-          />
-        </div>
+        <img
+          src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          className="bg-black opacity-90 lg:h-3/5 w-4/5 lg:w-2/5 hover:shadow-md hover:scale-105 rounded-md"
+        />
       </motion.div>
     </div>
   );

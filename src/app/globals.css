@@ -1,57 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bree+Serif&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bree+Serif&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient( to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-    scroll-behavior: smooth;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+  }
 }
 
 @layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
+  .text-balance {
+    text-wrap: balance;
+  }
 }
 
 .heading {
-    font-family: "Bree Serif", sans-serif;
+  font-family: "Bree Serif", sans-serif;
 }
 
 .para {
-    font-family: "Playwrite Gb S", sans-serif;
+  font-family: "Playwrite Gb S", sans-serif;
 }
 
 .heading-2 {
-    font-family: "Alata", sans-serif;
+  font-family: "Alata", sans-serif;
 }
-
 
 /* swiperr classs*/
 
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .swiper {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
