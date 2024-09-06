@@ -106,7 +106,7 @@ const ContactForm = () => {
       <div className="bg-white shadow-lg flex md:flex-row flex-col gap-10 rounded-lg p-8 w-full max-w-5xl mx-4 my-20">
         <div className="md:w-1/2 flex flex-col justify-center">
           <Image
-            src="https://images.pexels.com/photos/5439474/pexels-photo-5439474.jpeg"
+            src="https://i.postimg.cc/dQ69mfpz/contact-1.jpg"
             alt="About Us"
             layout="responsive"
             height={100}
