@@ -86,7 +86,7 @@ const ContactForm = () => {
 
     try {
       const jsonData = JSON.stringify(dataToSend);
-      await axios.post(`${process.env.API_URL}`, jsonData, {
+      await axios.post("api/contact", jsonData, {
         headers: {
           "Content-Type": "application/json",
         },
