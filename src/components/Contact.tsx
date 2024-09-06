@@ -1,4 +1,5 @@
 "use client";
+
 import "react-phone-number-input/style.css";
 import PhoneNumberInput, {
   isValidPhoneNumber,
@@ -6,7 +7,6 @@ import PhoneNumberInput, {
 import React, { useState, forwardRef } from "react";
 import axios from "axios";
 import { parsePhoneNumberFromString } from "libphonenumber-js";
-import Image from "next/image";
 
 // Data interface
 interface FormData {
@@ -34,9 +34,6 @@ const CustomInput = forwardRef<HTMLInputElement, InputComponentProps>(
     />
   )
 );
-
-// Set the display name for debugging purposes
-CustomInput.displayName = "CustomInput";
 
 const ContactForm = () => {
   // Phone number validation
@@ -91,8 +88,6 @@ const ContactForm = () => {
           "Content-Type": "application/json",
         },
       });
-      // console.log(res);
-
       setSuccessMessage("Your Data Submitted Successfully");
     } catch (error) {
       setErrorMessage("An error occurred. Please try again later.");
@@ -102,15 +97,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="h-full flex flex-col items-center justify-center bg-gray-300 px-4 ">
-      <div className="bg-white shadow-lg flex md:flex-row flex-col gap-10 rounded-lg p-8 w-full max-w-5xl mx-4 mt-20">
+    <div className="h-full flex flex-col items-center justify-center bg-gray-300 dark:bg-black px-4">
+      <div className="bg-white dark:bg-gray-300 shadow-lg flex md:flex-row flex-col gap-10 rounded-lg p-8 w-full max-w-5xl mx-4 my-20">
         <div className="md:w-1/2 flex flex-col justify-center">
-          <Image
+          <img
             src="https://plus.unsplash.com/premium_photo-1677529496297-fd0174d65941?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="About Us"
-            layout="responsive"
-            height={100}
-            width={100}
             className="rounded-lg mb-4 w-full"
           />
           <div className="text-lg text-gray-700 mb-4 max-sm:hidden">
@@ -120,7 +112,7 @@ const ContactForm = () => {
               customers. Our team of professionals is dedicated to ensuring your
               satisfaction with every interaction. Whether you have questions,
               need support, or simply want to learn more about what we offer, we
-              are here to help. Reach out to us today, and let&apos;s start a
+              are here to help. Reach out to us today, and let's start a
               conversation.
             </p>
           </div>
@@ -203,7 +195,6 @@ const ContactForm = () => {
               Mobile Number
             </label>
             <PhoneNumberInput
-              id="mobile"
               placeholder="Enter phone number"
               value={value}
               onChange={handlePhoneNumberChange}
