@@ -40,14 +40,21 @@ const Footer = () => {
             className="text-gray-300 dark:text-gray-300 "
           >
             <p>
-              Address: 10 1st Cross, Post, Annapoorneshwari Layout, Yeswanthpur,
-              Doddabidirakallu,Bengaluru, Karnataka 560073
+              <b>Address: </b> 10 1st Cross, Post, Annapoorneshwari Layout,
+              Yeswanthpur, Doddabidirakallu,Bengaluru, Karnataka 560073
             </p>{" "}
             <br />
-            <p>Phone: +91-9731123140</p> <br />
+            <p>
+              <b>Phone: </b>
+              <a href="+919731123140">+91-9731123140</a>
+            </p>{" "}
+            <br />
             <p>
               Email:{" "}
-              <a href="" className="hover:text-red-400">
+              <a
+                href="mailto:sales@grudhrasolutions.com"
+                className="hover:text-red-400"
+              >
                 sales@grudhrasolutions.com
               </a>
             </p>{" "}
