@@ -76,7 +76,7 @@ async function keepDatabaseAlive() {
   }
 }
 
-// Set the interval to send a query every 1day (300000 ms)
+// Set the interval to send a query every 1day
 setInterval(keepDatabaseAlive, 86400000);
 
 // Remember to properly close the Prisma connection when your app shuts down
