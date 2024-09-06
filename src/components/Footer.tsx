@@ -45,11 +45,12 @@ const Footer = () => {
             </p>{" "}
             <br />
             <p>
-              Phone: <a href="tel:+919731123140">+91-9731123140</a>
+              <b>Phone: </b>
+              <a href="tel:+919731123140">+91-9731123140</a>
             </p>{" "}
             <br />
             <p>
-              Email:{" "}
+              <b>Email:</b>{" "}
               <a
                 href="mailto:sales@grudhrasolutions.com"
                 className="hover:text-red-400"

@@ -6,11 +6,13 @@ import { ImagesSlider } from "./ui/images-slider";
 export function Simpleslider() {
   const images = [
     "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://plus.unsplash.com/premium_photo-1681131451273-c7605c51e06e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://plus.unsplash.com/premium_photo-1661391644149-4fab855f2815?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    "https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg",
+
+    "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L21vdGFybzdfcGhvdG9fb2ZfYV9wbGFudF9ncm93aW5nX2luX2dhcmRlbl9uYXR1cmFsX2xpZ2h0aW5nX3BsYV9lZGQwZDdhMi1hNWU4LTQxNmQtYmQzYi1iZWQ4YzY4OThiNDdfMS5qcGc.jpg",
   ];
   return (
-    <ImagesSlider className="h-[40rem]" images={images} >
+    <ImagesSlider className="h-[40rem]" images={images}>
       <motion.div
         initial={{
           opacity: 0,
@@ -24,10 +26,7 @@ export function Simpleslider() {
           duration: 0.6,
         }}
         className=" flex flex-col justify-center items-center brightness-200 mt-10 "
-      >
-        
-       
-      </motion.div>
+      ></motion.div>
     </ImagesSlider>
   );
 }
