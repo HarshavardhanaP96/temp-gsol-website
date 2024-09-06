@@ -65,6 +65,26 @@ export async function POST(request: NextRequest) {
   }
 }
 
+// Function to send a "heartbeat" query
+async function keepDatabaseAlive() {
+  try {
+    // A simple query to keep the connection alive
+    await prisma.$queryRaw`SELECT 1;`;
+    console.log("Database connection is alive.");
+  } catch (error) {
+    console.error("Error keeping the database connection alive:", error);
+  }
+}
+
+// Set the interval to send a query every 1day (300000 ms)
+setInterval(keepDatabaseAlive, 86400000);
+
+// Remember to properly close the Prisma connection when your app shuts down
+process.on("SIGINT", async () => {
+  await prisma.$disconnect();
+  process.exit();
+});
+
 // export async function GET() {
 //   return NextResponse.json({ message: "Express on Vercel" });
 // }
