@@ -112,7 +112,7 @@ const ContactForm = () => {
               customers. Our team of professionals is dedicated to ensuring your
               satisfaction with every interaction. Whether you have questions,
               need support, or simply want to learn more about what we offer, we
-              are here to help. Reach out to us today, and let's start a
+              are here to help. Reach out to us today, and let&apos;s start a
               conversation.
             </p>
           </div>
